@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="static/index.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="static/index.js"></script>
+		<title></title>
+        <style>
+            .container{position:relative;margin:0px;padding:0px;}
+            .current{color:red;position:absolute;left:30px;top:50px;font-size:50px;}
+            .viewby{color:red;position:absolute;left:950px;top:70px;font-size:30px;}
+            .High{color:red;font-size:30px;position:absolute;left:20px;top:210px;}
+            .High li{width:350px;height:70px;}
+            .Normal{color:red;font-size:30px;position:absolute;left:420px;top:210px;}
+            .Normal li{width:350px;height:70px;}
+           
+        </style>
+	</head>
+	<body>
+<div class="container">
+  <p class="current">My current schedule</p>
+     <p class="viewby">view by</p>
+    <button type="button" class="btn btn-default" 
+            style="width:100px;height:40px;font-size:22px;color:red;position:absolute;left:1060px;top:30px;border:none;"
+            >time</button>
+    <button type="button" class="btn btn-default" 
+            style="width:100px;height:40px;font-size:22px;color:red;position:absolute;left:1060px;top:70px;border:none;"
+            >category</button>
+    <button type="button" class="btn btn-default" 
+            style="width:100px;height:40px;font-size:22px;color:red;background-color:rgba(211,211,211,0.9);
+                   position:absolute;left:1060px;top:110px;border:none;"
+            >priority</button>
+            
+    <ul class="High">
+        <li style="list-style-type:none;text-align:center;">High</li>
+        <li style="border:solid;border-bottom:none;">finish my essay
+            <label style="zoom:2;position:absolute;left:155px;top:42px;"><input type="checkbox" name="remember"></label>
+            <span class="glyphicon glyphicon-star" style="position:absolute;left:260px;top:88px;color:rgba(0,0,0,0.7);"></span>
+            <span class="glyphicon glyphicon-remove" style="position:absolute;left:355px;top:88px;color:red;"></span>
+        </li>
+         <li style="border:solid;border-bottom:none;border-top:none;background-color:rgba(211,211,211,0.9);">dinner with Lily
+            <label style="zoom:2;position:absolute;left:155px;top:75px;"><input type="checkbox" name="remember"></label>
+            <span class="glyphicon glyphicon-star" style="position:absolute;left:260px;top:155px;color:rgba(0,0,0,0.7);"></span>
+            <span class="glyphicon glyphicon-remove" style="position:absolute;left:355px;top:155px;color:red;"></span>
+        </li>
+         <li style="border:solid;border-bottom:none;border-top:none;">2 pages reading
+            <label style="zoom:2;position:absolute;left:155px;top:108px;"><input type="checkbox" name="remember"></label>
+            <span class="glyphicon glyphicon-star" style="position:absolute;left:260px;top:222px;color:rgba(0,0,0,0.7);"></span>
+            <span class="glyphicon glyphicon-remove" style="position:absolute;left:355px;top:222px;color:red;"></span>
+        </li> 
+         <li style="border:solid;border-top:none;list-style-type:none;background-color:rgba(211,211,211,0.9);text-align:center;">
+             <span class="glyphicon glyphicon-plus" style="color:black;"></span></li> 
+    </ul>
+</div>
+
+    
+     <ul class="Normal">
+        <li style="list-style-type:none;text-align:center;">Normal</li>
+        <li style="border:solid;border-bottom:none;">finish my essay
+            <label style="zoom:2;position:absolute;left:155px;top:42px;"><input type="checkbox" name="remember"></label>
+            <span class="glyphicon glyphicon-star" style="position:absolute;left:260px;top:88px;color:rgba(0,0,0,0.7);"></span>
+            <span class="glyphicon glyphicon-remove" style="position:absolute;left:355px;top:88px;color:red;"></span>
+        </li>
+         <li style="border:solid;border-bottom:none;border-top:none;background-color:rgba(211,211,211,0.9);">dinner with Lily
+            <label style="zoom:2;position:absolute;left:155px;top:75px;"><input type="checkbox" name="remember"></label>
+            <span class="glyphicon glyphicon-star" style="position:absolute;left:260px;top:155px;color:rgba(0,0,0,0.7);"></span>
+            <span class="glyphicon glyphicon-remove" style="position:absolute;left:355px;top:155px;color:red;"></span>
+        </li>
+         <li style="border:solid;border-bottom:none;border-top:none;">2 pages reading
+            <label style="zoom:2;position:absolute;left:155px;top:108px;"><input type="checkbox" name="remember"></label>
+            <span class="glyphicon glyphicon-star" style="position:absolute;left:260px;top:222px;color:rgba(0,0,0,0.7);"></span>
+            <span class="glyphicon glyphicon-remove" style="position:absolute;left:355px;top:222px;color:red;"></span>
+        </li> 
+         <li style="border:solid;border-top:none;list-style-type:none;background-color:rgba(211,211,211,0.9);text-align:center;">
+             <span class="glyphicon glyphicon-plus" style="color:black;"></span></li> 
+    </ul>
+        
+         
+        
+</div>
+        
+	</body>
+</html>
