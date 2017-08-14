@@ -40,3 +40,6 @@ Page4.html
 (3) If you click the grey star which stands for normal events it will turn to yellow and goes to the list of priority events.
 (4) All functions work for new events.
 
+
+
+Problem:I can change the web pages correctly when I used the servier.jar in my computer. However, when I upload the pages into the codecheck ,I can jump among pages
