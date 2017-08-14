@@ -5,10 +5,14 @@ var addnumth=5;
 $(document).ready(function(){
     addnew();
     setca();
+	
+	
 });
 
 function addnew(){
     $(".button1").click(function(){
+	    var currentUrl = this.location.href;
+	    alert(currentUrl);
     	$(".addclass").append("<input type='text' class='text1'>");
         $(".addclass").append("<button class='button2'>Submit</button>");
         $(".button1").remove();
