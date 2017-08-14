@@ -1,104 +1,209 @@
 <html>
-	<head>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="static/index.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="static/index.js"></script>
-		<title></title>
-        <style>
-            .container{position:relative;margin:0px;padding:0px;}
-            .current{color:red;position:absolute;left:30px;top:50px;font-size:50px;}
-            .viewby{color:red;position:absolute;left:950px;top:70px;font-size:30px;}
-            .ultoday{color:red;font-size:30px;position:absolute;left:20px;top:210px;}
-            .ultoday li{width:350px;height:70px;}
-            .ultomorrow{color:red;font-size:30px;position:absolute;left:420px;top:210px;}
-            .ultomorrow li{width:350px;height:70px;}
-            .ulDayat{color:red;font-size:30px;position:absolute;left:820px;top:210px;}
-            .ulDayat li{width:350px;height:70px;}
-        </style>
-	</head>
-	<body>
-<div class="container">
-  <p class="current">My current schedule</p>
-     <p class="viewby">view by</p>
-    <button type="button" class="btn btn-default" 
-            style="width:100px;height:40px;font-size:22px;color:red;position:absolute;left:1060px;top:30px;border:none;
-                   background-color:rgba(211,211,211,0.9);"
-            >time</button>
-    <button type="button" class="btn btn-default" 
-            style="width:100px;height:40px;font-size:22px;color:red;position:absolute;left:1060px;top:70px;border:none;"
-            >category</button>
-    <button type="button" class="btn btn-default" 
-            style="width:100px;height:40px;font-size:22px;color:red;position:absolute;left:1060px;top:110px;border:none;"
-            >priority</button>
-    <ul class="ultoday">
-        <li style="list-style-type:none;text-align:center;">Today</li>
-        <li style="border:solid;border-bottom:none;">finish my essay
-            <label style="zoom:2;position:absolute;left:155px;top:42px;"><input type="checkbox" name="remember"></label>
-            <span class="glyphicon glyphicon-star" style="position:absolute;left:260px;top:88px;color:rgba(0,0,0,0.7);"></span>
-            <span class="glyphicon glyphicon-remove" style="position:absolute;left:355px;top:88px;color:red;"></span>
-        </li>
-         <li style="border:solid;border-bottom:none;border-top:none;background-color:rgba(211,211,211,0.9);">dinner with Lily
-            <label style="zoom:2;position:absolute;left:155px;top:75px;"><input type="checkbox" name="remember"></label>
-            <span class="glyphicon glyphicon-star" style="position:absolute;left:260px;top:155px;color:rgba(0,0,0,0.7);"></span>
-            <span class="glyphicon glyphicon-remove" style="position:absolute;left:355px;top:155px;color:red;"></span>
-        </li>
-         <li style="border:solid;border-bottom:none;border-top:none;">2 pages reading
-            <label style="zoom:2;position:absolute;left:155px;top:108px;"><input type="checkbox" name="remember"></label>
-            <span class="glyphicon glyphicon-star" style="position:absolute;left:260px;top:222px;color:rgba(0,0,0,0.7);"></span>
-            <span class="glyphicon glyphicon-remove" style="position:absolute;left:355px;top:222px;color:red;"></span>
-        </li> 
-         <li style="border:solid;border-top:none;list-style-type:none;background-color:rgba(211,211,211,0.9);text-align:center;">
-             <span class="glyphicon glyphicon-plus" style="color:black;"></span></li> 
-    </ul>
-</div>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</head>    
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-xs-0 col-sm-0"></div>
+      <div class="col-md-8 col-xs-12 col-sm-12">
 
-    
-     <ul class="ultomorrow">
-        <li style="list-style-type:none;text-align:center;">Tomorrow</li>
-        <li style="border:solid;border-bottom:none;">finish my essay
-            <label style="zoom:2;position:absolute;left:155px;top:42px;"><input type="checkbox" name="remember"></label>
-            <span class="glyphicon glyphicon-star" style="position:absolute;left:260px;top:88px;color:rgba(0,0,0,0.7);"></span>
-            <span class="glyphicon glyphicon-remove" style="position:absolute;left:355px;top:88px;color:red;"></span>
-        </li>
-         <li style="border:solid;border-bottom:none;border-top:none;background-color:rgba(211,211,211,0.9);">dinner with Lily
-            <label style="zoom:2;position:absolute;left:155px;top:75px;"><input type="checkbox" name="remember"></label>
-            <span class="glyphicon glyphicon-star" style="position:absolute;left:260px;top:155px;color:rgba(0,0,0,0.7);"></span>
-            <span class="glyphicon glyphicon-remove" style="position:absolute;left:355px;top:155px;color:red;"></span>
-        </li>
-         <li style="border:solid;border-bottom:none;border-top:none;">2 pages reading
-            <label style="zoom:2;position:absolute;left:155px;top:108px;"><input type="checkbox" name="remember"></label>
-            <span class="glyphicon glyphicon-star" style="position:absolute;left:260px;top:222px;color:rgba(0,0,0,0.7);"></span>
-            <span class="glyphicon glyphicon-remove" style="position:absolute;left:355px;top:222px;color:red;"></span>
-        </li> 
-         <li style="border:solid;border-top:none;list-style-type:none;background-color:rgba(211,211,211,0.9);text-align:center;">
-             <span class="glyphicon glyphicon-plus" style="color:black;"></span></li> 
-    </ul>
-        
-         <ul class="ulDayat">
-        <li style="list-style-type:none;text-align:center;">Day after tomorrow</li>
-        <li style="border:solid;border-bottom:none;">finish my essay
-            <label style="zoom:2;position:absolute;left:155px;top:42px;"><input type="checkbox" name="remember"></label>
-            <span class="glyphicon glyphicon-star" style="position:absolute;left:260px;top:88px;color:rgba(0,0,0,0.7);"></span>
-            <span class="glyphicon glyphicon-remove" style="position:absolute;left:355px;top:88px;color:red;"></span>
-        </li>
-         <li style="border:solid;border-bottom:none;border-top:none;background-color:rgba(211,211,211,0.9);">dinner with Lily
-            <label style="zoom:2;position:absolute;left:155px;top:75px;"><input type="checkbox" name="remember"></label>
-            <span class="glyphicon glyphicon-star" style="position:absolute;left:260px;top:155px;color:rgba(0,0,0,0.7);"></span>
-            <span class="glyphicon glyphicon-remove" style="position:absolute;left:355px;top:155px;color:red;"></span>
-        </li>
-         <li style="border:solid;border-bottom:none;border-top:none;">2 pages reading
-            <label style="zoom:2;position:absolute;left:155px;top:108px;"><input type="checkbox" name="remember"></label>
-            <span class="glyphicon glyphicon-star" style="position:absolute;left:260px;top:222px;color:rgba(0,0,0,0.7);"></span>
-            <span class="glyphicon glyphicon-remove" style="position:absolute;left:355px;top:222px;color:red;"></span>
-        </li> 
-         <li style="border:solid;border-top:none;list-style-type:none;background-color:rgba(211,211,211,0.9);text-align:center;">
-             <span class="glyphicon glyphicon-plus" style="color:black;"></span></li> 
-    </ul>
-        
-</div>
-        
-	</body>
-</html>
+        <div class="row">
+          
+
+         <div class="col-md-6 col-xs-8 col-sm-8">
+           <a href="http://localhost:8080">
+             <button style="margin-top: 2%;" type="button" class="btn btn-default btn-sm">Home</button></a>
+             <h1 style="margin-top: 10%;">My current schedule</h1></div>
+             <div class="col-md-2 col-md-offset-2 col-xs-12 col-sm-12" style="text-align: right;"><h3>View by</h3></div>
+             <div class="col-md-2 col-xs-12 col-sm-12 menu" style="text-align: center;">
+               <h3><button style="background-color: rgba(211,211,211,0.7);color: red;
+                width: 100%" type="button" class="btn btn-default btn-lg">Time</button></h3>
+                <a href="page3.html">
+                 <h3><button style="width: 100%" type="button" class="btn btn-default btn-lg">Category</button></h3></a>
+                 <a href="page4.html">
+                  <h3><button style="width: 100%" type="button" class="btn btn-default btn-lg">Priority</button></h3></a>
+                </div>
+              </div>
+
+              
+
+              <div class="row" style="text-align: center;">
+                <div class="col-md-3 col-xs-12 col-sm-12" style="padding: 0px;">
+                 <h1>Today</h1>
+                 <ul class="list-group ul1" style="border: solid;" >
+                  <li class="list-group-item" style="padding:0px;">
+                    <p class="sav" style="display: block;"></p>
+                    <h3 class="edit" data-toggle="modal" data-target="#myModal">finish my essay</h3>
+                    <h3><span class="glyphicon glyphicon-star star" 
+                      id="s1" style="color:grey;"></span>
+                      <span data-toggle="modal" data-target="#myModal2" class="glyphicon glyphicon-dashboard dash" style="color:rgba(0,0,0,0.7);"></span>
+                      <span class="glyphicon glyphicon-remove cross" style="color:red;"></span>
+                    </h3></li>
+                    <li class="list-group-item" style="padding:0px;">
+                      <p class="sav" style="display: block;"></p>
+                      <h3 class="edit" data-toggle="modal" data-target="#myModal">dinner with Lily</h3>
+                      <h3><span class="glyphicon glyphicon-star star" 
+                        id="s2" style="color:grey;"></span>
+                        <span data-toggle="modal" data-target="#myModal2" class="glyphicon glyphicon-dashboard dash" style="color:rgba(0,0,0,0.7);"></span>
+                        <span class="glyphicon glyphicon-remove cross" style="color:red;"></span>
+                      </h3>
+                    </li>
+                    <li class="list-group-item" style="padding:0px;">
+                      <p class="sav" style="display: block;"></p>
+                      <h3 class="edit" data-toggle="modal" data-target="#myModal">2 pages reading</h3>
+                      <h3><span class="glyphicon glyphicon-star star " 
+                        id="s3" style="color:grey;"></span>
+                        <span data-toggle="modal" data-target="#myModal2" class="glyphicon glyphicon-dashboard dash" style="color:rgba(0,0,0,0.7);"></span>
+                        <span class="glyphicon glyphicon-remove cross" style="color:red;"></span>
+                      </h3>
+                    </li>
+                    
+                    <li class="list-group-item addevent" style="padding:0px;"><h3> <span class="glyphicon glyphicon-plus" style="color:black;"></span></h3>                                     
+                    </li>
+
+                  </ul></div>
+
+                  <div class="col-md-3 col-md-offset-1 col-xs-12 col-sm-12" style="padding: 0px;"><h1>Tomorrow</h1>
+                    <ul class="list-group ul2" style="border: solid;" >
+                      <li class="list-group-item" style="padding:0px;">
+                        <p class="sav2" style="display: block;"></p>
+                        <h3 class="edit2" data-toggle="modal" data-target="#myModal">finish my essay</h3>
+                        <h3><span class="glyphicon glyphicon-star star2" 
+                          id="s1" style="color:grey;"></span>
+                          <span data-toggle="modal" data-target="#myModal2" class="glyphicon glyphicon-dashboard dash2" style="color:rgba(0,0,0,0.7);"></span>
+                          <span class="glyphicon glyphicon-remove cross2" style="color:red;"></span>
+                        </h3></li>
+                        <li class="list-group-item" style="padding:0px;">
+                          <p class="sav2" style="display: block;"></p>
+                          <h3 class="edit2" data-toggle="modal" data-target="#myModal">dinner with Lily</h3>
+                          <h3><span class="glyphicon glyphicon-star star2" 
+                            id="s2" style="color:grey;"></span>
+                            <span data-toggle="modal" data-target="#myModal2" class="glyphicon glyphicon-dashboard dash2" style="color:rgba(0,0,0,0.7);"></span>
+                            <span class="glyphicon glyphicon-remove cross2" style="color:red;"></span>
+                          </h3>
+                        </li>
+                        <li class="list-group-item" style="padding:0px;">
+                          <p class="sav2" style="display: block;"></p>
+                          <h3 class="edit2" data-toggle="modal" data-target="#myModal">2 pages reading</h3>
+                          <h3><span class="glyphicon glyphicon-star star2 " 
+                            id="s3" style="color:grey;"></span>
+                            <span data-toggle="modal" data-target="#myModal2" class="glyphicon glyphicon-dashboard dash2" style="color:rgba(0,0,0,0.7);"></span>
+                            <span class="glyphicon glyphicon-remove cross2" style="color:red;"></span>
+                          </h3>
+                        </li>
+                        
+                        <li class="list-group-item addevent2" style="padding:0px;"><h3> <span class="glyphicon glyphicon-plus" style="color:black;"></span></h3>                                     
+                        </li>
+
+                      </ul>
+                    </div>
+
+                    <div class="col-md-3 col-md-offset-1 col-xs-12 col-sm-12" style="padding: 0px;"><h1>Upcoming</h1>
+                      <ul class="list-group ul3" style="border: solid;" >
+                        <li class="list-group-item" style="padding:0px;">
+                          <p class="sav3" style="display: block;"></p>
+                          <h3 class="edit3" data-toggle="modal" data-target="#myModal">finish my essay</h3>
+                          <h3><span class="glyphicon glyphicon-star star3" 
+                            id="s1" style="color:grey;"></span>
+                            <span data-toggle="modal" data-target="#myModal2" class="glyphicon glyphicon-dashboard dash3" style="color:rgba(0,0,0,0.7);"></span>
+                            <span class="glyphicon glyphicon-remove cross3" style="color:red;"></span>
+                          </h3></li>
+                          <li class="list-group-item" style="padding:0px;">
+                            <p class="sav3" style="display: block;"></p>
+                            <h3 class="edit3" data-toggle="modal" data-target="#myModal">dinner with Lily</h3>
+                            <h3><span class="glyphicon glyphicon-star star3" 
+                              id="s2" style="color:grey;"></span>
+                              <span data-toggle="modal" data-target="#myModal2" class="glyphicon glyphicon-dashboard dash3" style="color:rgba(0,0,0,0.7);"></span>
+                              <span class="glyphicon glyphicon-remove cross3" style="color:red;"></span>
+                            </h3>
+                          </li>
+                          <li class="list-group-item" style="padding:0px;">
+                            <p class="sav3" style="display: block;"></p>
+                            <h3 class="edit3" data-toggle="modal" data-target="#myModal">2 pages reading</h3>
+                            <h3><span class="glyphicon glyphicon-star star3 " 
+                              id="s3" style="color:grey;"></span>
+                              <span data-toggle="modal" data-target="#myModal2" class="glyphicon glyphicon-dashboard dash3" style="color:rgba(0,0,0,0.7);"></span>
+                              <span class="glyphicon glyphicon-remove cross3" style="color:red;"></span>
+                            </h3>
+                          </li>
+                          
+                          
+                          <li class="list-group-item addevent3" style="padding:0px;"><h3> <span class="glyphicon glyphicon-plus" style="color:black;"></span></h3>                                     
+                          </li>
+
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="col-md-2 col-xs-0 col-sm-0"></div>
+                </div>
+              </div>
+              
+            </body>
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal">
+              <div class="modal-dialog">
+                
+                <!-- Modal content-->
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">title</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default butcom" data-dismiss="modal">Confirm</button>
+                  </div>
+
+                </div>      
+              </div>
+            </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal2">
+              <div class="modal-dialog modal-sm">
+                
+                <!-- Modal content-->
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title timeremain">Set your time!!!</h4>
+                  </div>
+
+                  <div class="modal-body">
+                    Hour:<textarea class="form-control hour" rows="1" id="comment"></textarea>
+                    Minute:<textarea class="form-control minute" rows="1" id="comment"></textarea>
+                    Second:<textarea class="form-control second" rows="1" id="comment"></textarea>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default butset" data-dismiss="modal">Confirm</button>
+                  </div>
+
+                </div>      
+              </div>
+            </div>  
+
+
+            
+
+
+            </html>
