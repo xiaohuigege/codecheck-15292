@@ -42,6 +42,3 @@ Page4.html
 
 
 
-Problem:
-1.I can change the web pages correctly when I used the servier.jar in my computer. However, when I upload the pages into the codecheck ,I can not jump among pages.
-2. I am not sure to use index.js or static/index.js. I uses index.js in my computer but in code check I can not read it.So I change it to static/index.js. If it does not work in you computer, please try to delete static of static/index.js. （also in other places）
